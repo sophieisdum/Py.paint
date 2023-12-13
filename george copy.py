@@ -23,11 +23,6 @@ def clickLeft(x, y):  # Make sure to have parameters x, y
 def clickRmiddlet(x, y):  # Make sure to have parameters x, y
         t.pencolor('#000000')
         t.pensize(10)
-        
-"""
-Paint Application using Python Turtle
-by t-wy
-"""
 
 def save():
     turtle.getscreen().getcanvas().postscript(colormode='color', file="drawing.eps")
@@ -51,7 +46,6 @@ t.shape("square")
 t.fillcolor("")
 t.up()
 
-# dirty hack to hide the border completely
 drawturtle_backup = t._drawturtle
 def _drawturtle(*args, **kwargs):
     bkup = t._pencolor
