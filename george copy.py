@@ -51,7 +51,6 @@ t.shape("square")
 t.fillcolor("")
 t.up()
 
-# dirty hack to hide the border completely
 drawturtle_backup = t._drawturtle
 def _drawturtle(*args, **kwargs):
     bkup = t._pencolor
